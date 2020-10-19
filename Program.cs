@@ -164,18 +164,14 @@ namespace MovieListing
                      Console.WriteLine("What is the title of the movie?");
                      String search = Console.ReadLine();
 
-                     for (int i = 0; i < MovieIds.Count; i++)
-                     {
-                         var titles = MovieTitles.Where(m => m.Contains(search)).Select(m => m);
-                         Console.WriteLine(titles);
-                     }
-
                      
-
-
                      
+                     //for (int i = 0; i < MovieIds.Count; i++)
+                     //{
+                     //    var titles = movieFile.Movies.Where(m => m.title.Contains("Shark")).Select(m => m.title);
+                     //    Console.WriteLine(titles);
+                     //}
 
-                     
                 }
                 
                 } while (choice == "1" || choice == "2" || choice =="3");
