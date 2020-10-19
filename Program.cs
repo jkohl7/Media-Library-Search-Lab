@@ -86,6 +86,7 @@ namespace MovieListing
                     // display choices to user
                     Console.WriteLine("1) Add Movie");
                     Console.WriteLine("2) Display All Movies");
+                    Console.WriteLine("3) Find Movie");
                     Console.WriteLine("Enter to quit");
 
                     // input selection
@@ -158,7 +159,15 @@ namespace MovieListing
                         Console.WriteLine();
                     }
                     }
-                } while (choice == "1" || choice == "2");
+                else if (choice == "3")
+                {
+                     Console.WriteLine("What is the title of the movie?");
+                     String search = Console.ReadLine();
+
+                     
+                }
+                
+                } while (choice == "1" || choice == "2" || choice =="3");
             }
             
             logger.Info("Program ended");
